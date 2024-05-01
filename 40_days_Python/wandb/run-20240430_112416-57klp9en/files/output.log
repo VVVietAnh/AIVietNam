@@ -1,0 +1,5 @@
+C:\Users\vieta\AppData\Local\Temp\ipykernel_29888\2777615408.py:39: RuntimeWarning: overflow encountered in double_scalars
+  loss = (y_hat-y) * (y_hat-1) / 2
+C:\Users\vieta\AppData\Local\Temp\ipykernel_29888\1620906511.py:10: RuntimeWarning: overflow encountered in double_scalars
+  dw = [2*x_i*(y_hat - y) for x_i in x]
+C:\Users\vieta\AppData\Local\Temp\ipykernel_29888\1620906511.py:16: RuntimeWarning: invalid value encountered in double_scalars

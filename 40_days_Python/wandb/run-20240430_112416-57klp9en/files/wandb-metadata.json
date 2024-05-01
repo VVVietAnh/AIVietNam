@@ -1,0 +1,44 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.10.8",
+    "heartbeatAt": "2024-04-30T04:24:21.845935",
+    "startedAt": "2024-04-30T04:24:16.103018",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/VVVietAnh/AIVietNam.git",
+        "commit": "f987fbb5846b07c24fd972c081d4e1a9851fd100"
+    },
+    "email": "115202254+VVVietAnh@users.noreply.github.com",
+    "root": "D:/ProjectCode/AIVietNam",
+    "host": "LAPTOP-ASUS",
+    "username": "vietanh",
+    "executable": "c:\\Users\\vieta\\anaconda3\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1600.0,
+        "min": 0.0,
+        "max": 1800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1600.0,
+            "min": 0.0,
+            "max": 1800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 48.827144622802734,
+            "used": 31.034393310546875
+        }
+    },
+    "memory": {
+        "total": 15.884780883789062
+    }
+}

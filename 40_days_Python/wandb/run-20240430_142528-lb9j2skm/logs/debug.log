@@ -1,0 +1,43 @@
+2024-04-30 14:25:28,637 INFO    MainThread:29888 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-30 14:25:28,637 INFO    MainThread:29888 [wandb_setup.py:_flush():76] Configure stats pid to 29888
+2024-04-30 14:25:28,637 INFO    MainThread:29888 [wandb_setup.py:_flush():76] Loading settings from C:\Users\vieta\.config\wandb\settings
+2024-04-30 14:25:28,637 INFO    MainThread:29888 [wandb_setup.py:_flush():76] Loading settings from d:\ProjectCode\AIVietNam\40_days_Python\wandb\settings
+2024-04-30 14:25:28,638 INFO    MainThread:29888 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-30 14:25:28,638 INFO    MainThread:29888 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-30 14:25:28,638 INFO    MainThread:29888 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-04-30 14:25:28,638 INFO    MainThread:29888 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-30 14:25:28,639 INFO    MainThread:29888 [wandb_init.py:_log_setup():521] Logging user logs to d:\ProjectCode\AIVietNam\40_days_Python\wandb\run-20240430_142528-lb9j2skm\logs\debug.log
+2024-04-30 14:25:28,639 INFO    MainThread:29888 [wandb_init.py:_log_setup():522] Logging internal logs to d:\ProjectCode\AIVietNam\40_days_Python\wandb\run-20240430_142528-lb9j2skm\logs\debug-internal.log
+2024-04-30 14:25:28,641 INFO    MainThread:29888 [wandb_init.py:_jupyter_setup():467] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000014870084580>
+2024-04-30 14:25:28,643 INFO    MainThread:29888 [wandb_init.py:init():561] calling init triggers
+2024-04-30 14:25:28,644 INFO    MainThread:29888 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.01, 'epochs': 1000}
+2024-04-30 14:25:28,644 INFO    MainThread:29888 [wandb_init.py:init():586] re-initializing run, found existing run on stack: 57klp9en
+2024-04-30 14:25:28,652 INFO    MainThread:29888 [wandb_run.py:_finish():2064] finishing run team-va/demo-linear-regression/57klp9en
+2024-04-30 14:25:28,998 ERROR   MainThread:29888 [wandb_init.py:init():1209] error
+Traceback (most recent call last):
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\wandb_init.py", line 1181, in init
+    run = wi.init()
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\wandb_init.py", line 596, in init
+    latest_run.finish()
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\wandb_run.py", line 420, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\wandb_run.py", line 2055, in finish
+    return self._finish(exit_code, quiet)
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\wandb_run.py", line 2083, in _finish
+    manager._inform_finish(run_id=self._run_id)
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\wandb_manager.py", line 218, in _inform_finish
+    svc_iface._svc_inform_finish(run_id=run_id)
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\service\service_sock.py", line 56, in _svc_inform_finish
+    self._sock_client.send(inform_finish=inform_finish)
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\lib\sock_client.py", line 211, in send
+    self.send_server_request(server_req)
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\lib\sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\lib\sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "c:\Users\vieta\anaconda3\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
